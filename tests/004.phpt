@@ -19,8 +19,8 @@ i = ""
 CODE
 );
 
-for ($i = 'a'; $i < 'j'; $i++) {
-    var_dump($l->{$i});
+foreach (range('a', 'i') as $char) {
+    var_dump($l->{$char});
 }
 ?>
 --EXPECT--
